@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stopwatch App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+  <h1>⏱ Advanced Stopwatch</h1>
+  
+
+  <div class="clock-wrapper">
+    <div class="clock">
+        <div class="dot-wrapper" id="dotWrapper">
+          <div class="rotating-dot"></div>
+        </div>  
+      <div id="display" class="time-display">00:00:00</div>
+      <div id="lap-markers"></div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="startTimer()">▶️ Start</button>
+    <button onclick="stopTimer()">⏸ Stop</button>
+    <button onclick="resetTimer()">🔄 Reset</button>
+    <button onclick="recordLap()">Lap</button>
+  </div>
+
+  <ul id="lap-times"></ul>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
